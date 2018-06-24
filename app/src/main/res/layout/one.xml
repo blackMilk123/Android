@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/ppp"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:text="搜索"
+            android:background="#6495ED"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/find"
+            android:hint="请输入搜索关键字"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAddNote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#D1e9e9"
+        android:text="点击新建" />
+
+
+</LinearLayout>

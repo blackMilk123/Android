@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/one"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="900px"
+        >
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="20dp"
+            android:background="#C6E2FF"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/one"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".MainActivity">
+
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/iv_head"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"
+    />
+<LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/iv_head"
+    android:gravity="center_vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/regist_password"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_psw"
+            android:text="密   码"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_psw"
+            android:hint="请输入隐私密码"
+            android:inputType="textPassword"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+<Button
+    android:layout_width="160dp"
+    android:layout_height="48dp"
+    android:id="@+id/login"
+    android:layout_below="@+id/layout"
+    android:background="#6495ED"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:text="确认"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    />
+
+
+
+</RelativeLayout>

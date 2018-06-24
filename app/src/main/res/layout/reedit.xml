@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ppp"
+
+    >
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="true">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_visibility"
+        >
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+
+            android:background="@android:drawable/checkbox_off_background"
+
+            android:text="编辑"
+            android:visibility="visible" />
+        <Button
+            android:visibility="gone"
+            android:background="@android:drawable/checkbox_off_background"
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/checkbox_off_background"
+            android:text="返回" />
+        <Button
+            android:id="@+id/delete"
+
+            android:layout_width="wrap_content"
+            android:background="@android:drawable/checkbox_off_background"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="删除"
+            android:visibility="gone"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnAddPhoto"
+            android:background="@android:drawable/checkbox_off_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="拍照" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnAddVideo"
+            android:background="@android:drawable/checkbox_off_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录像"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
